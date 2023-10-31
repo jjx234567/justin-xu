@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Homepage</title>
-    <link href="main.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-    <div id="main"> Hello </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Justin Xu • Personal Website</title>
+    <meta
+      name="description"
+      content="Welcome to Justin Xu's personal website."
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+      <nav class="container-fluid">
+        <ul>
+          <li>
+            <a href="./" class="contrast" onclick="event.preventDefault()"
+              ><strong>JJX</strong></a
+            >
+          </li>
+        </ul>
+        <ul>
+            <li>
+                <details role="list" dir="rtl">
+                  <summary aria-haspopup="listbox" role="link" class="contrast">Pages</summary>
+                  <ul role="listbox">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                  </ul>
+                </details>
+            </li>
+          <li>
+            <details role="list" dir="rtl">
+              <summary aria-haspopup="listbox" role="link" class="contrast">Socials</summary>
+              <ul role="listbox">
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <header class="container">
+        <hgroup>
+          <h1>Justin Xu</h1>
+          <h2>Student • Developer • Gamer</h2>
+        </hgroup>
+        <p><a href="#" role="button" onclick="event.preventDefault()">Resume</a></p>
+      </header>
+    </div>
+    <!-- ./ Hero -->
+
+    <!-- Main -->
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>About Me</h2>
+            <h3>Student at CIS</h3>
+          </hgroup>
+          <p>
+            I am currently in 8th grade at Hong Kong's Chinese International School.
+          </p>
+
+            <hgroup>
+              <h2>Projects</h2>
+              <h3>Flappy Bird</h3>
+            </hgroup>
+            <p>
+              Made using pygame.
+            </p>
+            <figure>
+              <img src="assets/img/flappy-bird.jpg" alt="Flappy Bird" />
+            </figure>
+        </section>
+
+        <aside>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"
+            ><img src="assets/img/cis.jpg" alt="CIS"
+          /></a>
+          <p>
+            <a href="#" onclick="event.preventDefault()">Chinese International School</a><br />
+            <small>8th Grader</small>
+          </p>
+        </aside>
+      </div>
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Subscribe -->
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Contact Me</h2>
+            <h3>Reach out with any questions</h3>
+          </hgroup>
+          <form class="grid">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First name"
+              aria-label="First name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit" onclick="event.preventDefault()">Contact</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- ./ Subscribe -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small
+        >Built with <a href="https://picocss.com">Pico</a> •
+        <a href="https://github.com/picocss/examples/tree/master/v1-company/">Source code</a></small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="assets/script.js"></script>
+  </body>
 </html>
