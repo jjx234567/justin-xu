@@ -82,20 +82,26 @@
               <h2>Projects</h2>
               <h3>A list of all my projects</h3>
             </hgroup>
-            <h3>Flappy Bird</h3>
-            <p>
-              Made using pygame.
-            </p>
-            <figure>
-              <img src="assets/img/flappy-bird.jpg" alt="Flappy Bird" />
-            </figure>
-            <h3>Email Bot</h3>
-            <p>
-              A bot made in python to send me automated schedule reminders through email.
-            </p>
-            <figure>
-              <img src="assets/img/email-bot.png" alt="Email Bot" />
-            </figure>
+            <script src="projects.js"></script>
+            <div id="projects">
+              </div>
+              <script>
+                function addProjects() {
+                    for (i in myData) {
+                      var project = myData[i]
+                      document.getElementById("projects")
+                        .innerHTML +=
+                        `<h3>`+project[0]+`</h3>
+                      <p>`+
+                        project[1]+
+                      `</p>
+                      <figure>
+                        <img src="`+project[2]+`" alt="none for now bozo" />
+                      </figure>`;
+                    } 
+                }
+                addProjects();
+              </script>
         </section>
 
         <aside>

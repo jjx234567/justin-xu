@@ -1,0 +1,3 @@
+title: flappy bird, description: Made using pygame., image: assets/img/flappy-bird.jpg
+title: email bot, description: A bot made in python to send me automated schedule reminders through email., image: assets/img/email-bot.png
+title: map visualiser, description: visualises maps., image: assets/img/wherehtml.png
