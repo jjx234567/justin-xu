@@ -125,13 +125,13 @@
             <h2>Contact Me</h2>
             <h3>Reach out with any questions</h3>
           </hgroup>
-          <form class="grid">
+          <form class="grid" action="send_email.php" method="post">
             <input
               type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="First name"
-              aria-label="First name"
+              id="name"
+              name="name"
+              placeholder="name"
+              aria-label="name"
               required
             />
             <input
@@ -142,7 +142,15 @@
               aria-label="Email address"
               required
             />
-            <button type="submit" onclick="event.preventDefault()">Contact</button>
+            <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="message"
+            aria-label="message"
+            required
+          />
+            <button type="submit">Contact</button>
           </form>
         </article>
       </div>
